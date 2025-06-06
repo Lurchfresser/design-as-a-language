@@ -157,7 +157,7 @@
                     <Choice Kind="TypeFlag" Name="BlendOperator" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="Qbu22EQ1neJOLlhaJP0RKy" Comment="Aspect Ratio Correction Mode" Bounds="368,770,84,15" ShowValueBox="true" isIOBox="true" Value="FitOut">
+                <Pad Id="Qbu22EQ1neJOLlhaJP0RKy" Comment="Aspect Ratio Correction Mode" Bounds="368,770,84,15" ShowValueBox="true" isIOBox="true" Value="FitIn">
                   <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="SizeMode" />
                   </p:TypeAnnotation>
@@ -280,7 +280,7 @@
                 <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
               </p:NodeReference>
               <Pin Id="N351GvxzyMBP4oRdGN4wdz" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="Gwrg74LyMReLa2t7p5hETT" Name="Bounds" Kind="InputPin" DefaultValue="690, 125.5, 538, 436" IsHidden="true" />
+              <Pin Id="Gwrg74LyMReLa2t7p5hETT" Name="Bounds" Kind="InputPin" DefaultValue="960.5, 29, 538.5, 930" IsHidden="true" />
               <Pin Id="IUkdq1CRGuTMySas7WtyCS" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
               <Pin Id="GV1z3yMFeBBNfafcjA9Ez7" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
               <Pin Id="LQWeUoEzKaqM6fpvk8rpV4" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -1552,7 +1552,7 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Renderer" />
                   </p:NodeReference>
-                  <Pin Id="GdAG9Zc9E65PyUjz3m66PW" Name="Bounds" Kind="InputPin" DefaultValue="340, 176, 613, 435" IsHidden="true" />
+                  <Pin Id="GdAG9Zc9E65PyUjz3m66PW" Name="Bounds" Kind="InputPin" DefaultValue="871, 348, 613, 435" IsHidden="true" />
                   <Pin Id="ApphxPeHX3ROEfdp5iGIph" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
                   <Pin Id="KkUaRGIbiz2L6MVtb7Ak5u" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
                   <Pin Id="N40KueLD7lOMDpiiewV9ip" Name="Node Context" Kind="InputPin" IsHidden="true" />

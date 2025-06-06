@@ -58,7 +58,7 @@
             <Pin Id="CTJnm9n9BSGLBrlWc4IYkq" Name="Subsurface Scattering Blur Settings" Kind="InputPin" IsHidden="true" />
             <Pin Id="RVsekXdhJJIO9UAfBLTYYd" Name="Bind Depth As Resource During Transparent Rendering" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Node Bounds="277,549,85,19" Id="GJMU9G5lrn7OQYuZqXKwMr">
+          <Node Bounds="251,607,85,19" Id="GJMU9G5lrn7OQYuZqXKwMr">
             <p:NodeReference LastCategoryFullName="MXL" LastDependency="MotionExperienceLib-0.2.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MXLLayer" />
@@ -220,7 +220,7 @@
             <Pin Id="SeEBKb2YyFKNgKcUKNo27m" Name="Sample Rate" Kind="OutputPin" />
             <Pin Id="S5vjHEJTcyBOekJzIpwNhw" Name="Original Format" Kind="OutputPin" />
           </Node>
-          <Pad Id="Ifvb5wYREa1LlrONTwdXdQ" Comment="Filename" Bounds="263,-165,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\Desktop\AntiVVVVa\assets\audio\Pussy Riot - БЕСИТ ⧸ RAGE (Official Music Video).mp3">
+          <Pad Id="Ifvb5wYREa1LlrONTwdXdQ" Comment="Filename" Bounds="263,-165,140,15" ShowValueBox="true" isIOBox="true" Value="assets\audio\Pussy Riot - БЕСИТ ⧸ RAGE (Official Music Video).mp3">
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
@@ -296,7 +296,7 @@
             <Pin Id="Nfab0l6dtQgQKwilSHYXRp" Name="Has Changed" Kind="OutputPin" />
             <Pin Id="L834gooHXwBMnL49tHqeqV" Name="Force New Func" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Node Bounds="327,470,105,19" Id="IRsIT8nGT7sMdWhArMZj5d">
+          <Node Bounds="320,493,105,19" Id="IRsIT8nGT7sMdWhArMZj5d">
             <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.TextureFX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Filter" NeedsToBeDirectParent="true">
@@ -318,7 +318,7 @@
             <Pin Id="CoRSCMDP4PTLVUewbEMqQE" Name="Apply" Kind="InputPin" />
             <Pin Id="J9nA7e6IHHbOYJqv4rbGtV" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="227,480,85,19" Id="OLo4ehtpYQbLezv6PUD4ki">
+          <Node Bounds="264,540,85,19" Id="OLo4ehtpYQbLezv6PUD4ki">
             <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.TextureFX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="Edge" />
@@ -397,6 +397,55 @@
             <Pin Id="KUCaQysYCvjNiXiYNCXz9k" Name="Output Maximum" Kind="InputPin" DefaultValue="1" />
             <Pin Id="MHOA0g8mceGQTAGTZX3mNp" Name="Output" Kind="OutputPin" />
           </Node>
+          <Node Bounds="-19,465,105,19" Id="PAQXAsHFfztLllmRxAmKNH">
+            <p:NodeReference LastCategoryFullName="Stride.Textures.Source" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SkiaTexture" />
+            </p:NodeReference>
+            <Pin Id="KA23aFnczGTPfjoNzCQlvh" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Ch6aT648VT3MG9fKCeVzCc" Name="Input" Kind="InputPin" />
+            <Pin Id="UiyVwmWloTSOGN5KiYggQ3" Name="Size" Kind="InputPin" />
+            <Pin Id="FnbF5EudEY0NnmV3u30jrC" Name="Space" Kind="InputPin" />
+            <Pin Id="TqjN9rtQH3lO2ikNPWxhtG" Name="Clear" Kind="InputPin" />
+            <Pin Id="J14PEhYPQO5QF6JfMiGROV" Name="Clear Color" Kind="InputPin" />
+            <Pin Id="FwS7fDzZAlELRhFMW1bRa0" Name="Format" Kind="InputPin" />
+            <Pin Id="D5yBoGEOXaNMy8k39VyvPG" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="-19,421,105,19" Id="PcQDwC4LLC4L3xh8nLx431">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers.Text" LastDependency="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Text" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Layers" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="ProcessAppFlag" Name="Text" />
+            </p:NodeReference>
+            <Pin Id="IcutM6p7r4OOqwlOzoK89E" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OoIRCKzkq9MPBR7Hr8z0xz" Name="Position" Kind="InputPin" />
+            <Pin Id="LzEmi4HhyKsP4qIvn1aq2o" Name="Size" Kind="InputPin" />
+            <Pin Id="FNIrpUumVhDLwaGcGPmbu9" Name="Anchor" Kind="InputPin" />
+            <Pin Id="FhQYqew7BaXQKkQFtpNPoM" Name="Text" Kind="InputPin" />
+            <Pin Id="LGuCEpI2XVkMMYei5hHgMq" Name="Paint" Kind="InputPin" />
+            <Pin Id="LliKNaX7y1NP9LGvPz8OgQ" Name="Enabled" Kind="InputPin" />
+            <Pin Id="I1yDnTtnTWpOJDuOfG0aBW" Name="Output" Kind="OutputPin" />
+            <Pin Id="D59iDOTkj4ZL5GerKAOkZg" Name="Baseline Position" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="-19,364,165,19" Id="Bkhmc7DzumrOUPtzhYuG2x">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Text" LastDependency="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FontAndParagraph" />
+            </p:NodeReference>
+            <Pin Id="HlLToKJgCSNLpKIUos5QMe" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="C6Z6t9ZDoKcQLCdjDa9pD4" Name="Input" Kind="InputPin" />
+            <Pin Id="VgNJsIMGqfRQDoI2MbNxuM" Name="Family Name" Kind="InputPin" />
+            <Pin Id="J8Y3MKSPbQWLopjUwRAn0I" Name="Style" Kind="InputPin" />
+            <Pin Id="Hzc8YQZ4qLpNQ54PyIumLi" Name="Size" Kind="InputPin" />
+            <Pin Id="Kqiff87oiSuPi7a8s1leLd" Name="Color" Kind="InputPin" />
+            <Pin Id="V4qZTtxIjRuN7QwzzbjJ3L" Name="Line Height in em" Kind="InputPin" />
+            <Pin Id="V1qeQB8QH1yLATkRs2NZni" Name="Horizontal Alignment" Kind="InputPin" DefaultValue="Center" />
+            <Pin Id="FN3gKpCs2NmO6uuEvGLDER" Name="Vertical Alignment" Kind="InputPin" />
+            <Pin Id="CqGrfjG82MrPJHz2TIc8Ik" Name="Show Helpers" Kind="InputPin" />
+            <Pin Id="H3dMsNgW88ZOxyWP86ZC12" Name="Output" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="TtsCM35AyT4QdO3bvLgOOa" Name="Create" />
         <Patch Id="P1PgFsg8OVcMqC0Ew97HMN" Name="Update" />
@@ -423,8 +472,6 @@
         <Link Id="MgsCuI4bBEnPd7VjeSNqOY" Ids="NgPt4ZgSGWTOiZ0o0AQIdP,RapywChj38zNpgLqt6JlJL" />
         <Link Id="JMUKvwIuD3ZOzkyKe49CuS" Ids="IZl14fDjlUnMDqr1yNIw78,UJjTZyoLs9vLeN4h1GLUZF" />
         <Link Id="HLt7TTfQW4NNaMWE67y9B7" Ids="RTc3jSRAChqLrzrCUSZrDm,K5y9rhMGzHWNcNqRAKm5FH" />
-        <Link Id="Huchz4o9NZzQcDppB0RRIj" Ids="SmdbQhYNliBQb2kxtLS20K,IqWRBzqU9YfM3usBn9hn5q" />
-        <Link Id="HXzyCDJwe4MNL9d4MnpL0M" Ids="SmdbQhYNliBQb2kxtLS20K,QQOLQT6ka6sMK63NesZ4pq" />
         <Link Id="JWCWjYFGjHwQUQn4EM5owt" Ids="J9nA7e6IHHbOYJqv4rbGtV,Ec2Hn4USe5MMrOtuWrg9Uf" />
         <Link Id="GDZsX6WjRJPOGa7HCciFIX" Ids="SMX8jJ63Kz8NqMrNat7Cq6,T7Dna6zInxlOggLnOSQnTr" />
         <Link Id="FAY1EHZj8A5MsdxLLtjGip" Ids="OK4yJmVCd6PNAF4rqDppOY,KdjzpCoXa4NOKfWxkVDIsR" />
@@ -434,6 +481,11 @@
         <Link Id="J3tKtHNUCPJMVvmVWuPcYw" Ids="S4f7GPSW21GLdtwrAvcgq3,KIRxP5u4MkgMy7pwsNt6w2" />
         <Link Id="LldkK5dqGmcLbqQc3fHLh7" Ids="PQHzTh9TjaaNGYWBm9isNP,GqxDYZzLVTcPbSHvx33FNC" />
         <Link Id="DO4v8F0ot8uNzwcUkbcnaM" Ids="MHOA0g8mceGQTAGTZX3mNp,U01Ucb5MGquPaicyAYZOuh" />
+        <Link Id="AOZafMOojw2OgFNY4BWklZ" Ids="I1yDnTtnTWpOJDuOfG0aBW,Ch6aT648VT3MG9fKCeVzCc" />
+        <Link Id="ILjakCABWuQPNb3rQBkdZy" Ids="D5yBoGEOXaNMy8k39VyvPG,IqWRBzqU9YfM3usBn9hn5q" />
+        <Link Id="JggkxPhh8crQZBUveaBR9q" Ids="D5yBoGEOXaNMy8k39VyvPG,QQOLQT6ka6sMK63NesZ4pq" />
+        <Link Id="V4SfgOPSOIDN1ylXumlM6w" Ids="H3dMsNgW88ZOxyWP86ZC12,LGuCEpI2XVkMMYei5hHgMq" />
+        <Link Id="APX7KGoomhuNwL6lT5djj4" Ids="RTc3jSRAChqLrzrCUSZrDm,Hzc8YQZ4qLpNQ54PyIumLi" />
       </Patch>
     </Node>
   </Patch>
@@ -441,4 +493,5 @@
   <NugetDependency Id="UARHLEsdeNMOlloJms11Y1" Location="VL.Stride" Version="2024.6.7" />
   <NugetDependency Id="SKpLjMUVeB7PNPMBPAKlsK" Location="VL.Audio" Version="1.8.2" />
   <NugetDependency Id="TReS5m9HwajNfYFTocV42J" Location="VL.Stride.TextureFX" Version="2024.6.7" />
+  <NugetDependency Id="L8LXPZdnjYxQTiH8Gnds3A" Location="VL.Skia" Version="2024.6.7" />
 </Document>
