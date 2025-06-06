@@ -47,7 +47,7 @@
             <Pin Id="Rr7iYpenuYwMyjTJmq6QQW" Name="Format" Kind="InputPin" />
             <Pin Id="Nd5rZnWgTC4PM3mrL4HHjv" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="485,637,85,19" Id="NUjMRkwxHQPNjV974jX02P">
+          <Node Bounds="413,650,85,19" Id="NUjMRkwxHQPNjV974jX02P">
             <p:NodeReference LastCategoryFullName="MXL" LastDependency="MotionExperienceLib-0.1.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MXLLayer" />
@@ -128,7 +128,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="629,616,125,19" Id="Kuo4ganmc06PZZxEHubF9x">
+          <Node Bounds="620,630,125,19" Id="Kuo4ganmc06PZZxEHubF9x">
             <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.TextureFX.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Filter" NeedsToBeDirectParent="true" />
@@ -161,7 +161,7 @@
             <Pin Id="DbVPYKfCfG8OpoltES14zE" Name="Input 2" Kind="InputPin" />
             <Pin Id="AINLMa7kAzcM2PghV57YJA" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="683,699,85,19" Id="HNDsiZrfdLVMLKkrBM88Mm">
+          <Node Bounds="471,550,85,19" Id="HNDsiZrfdLVMLKkrBM88Mm">
             <p:NodeReference LastCategoryFullName="MXL" LastDependency="MotionExperienceLib-0.1.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MXLLayer" />
@@ -304,8 +304,6 @@
               <p:precision p:Type="Int32">6</p:precision>
             </p:ValueBoxSettings>
           </Pad>
-          <ControlPoint Id="OdWLmyF0suCOuN6UCNODhR" Bounds="657,500" />
-          <Pad Id="GoTeJ1m9BE1NNuPEZyqm5S" Comment="" Bounds="587,510,47,95" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="689,501,45,19" Id="Gt7m9KTWYzVPP9qOLGydtP">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -395,6 +393,21 @@
             <Pin Id="RW9ThzkF6L6MN9YYit9Laa" Name="Input 2" Kind="InputPin" />
             <Pin Id="O5v530gVQQTNtIOKnS2ob5" Name="Output" Kind="OutputPin" />
           </Node>
+          <Node Bounds="689,151,45,19" Id="G3GtdiMY7L4QYqzEtJR9RS">
+            <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LFO" />
+            </p:NodeReference>
+            <Pin Id="Ex2VymcVSjzQaAvp6QNmvU" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TqvK3wLyNJKP7wauxD3m4D" Name="Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Cm8Z9HqrGAFPcTcReFFyZH" Name="New Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DJJCYuQiZ0hMbqrT0fmmQQ" Name="Period" Kind="InputPin" DefaultValue="0.22" />
+            <Pin Id="NtsCeXkAHNnNln37CithkI" Name="Pause" Kind="InputPin" />
+            <Pin Id="N5SOidYDtBNO9WwVlU1DBd" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="AOZZbTqU1fOOol9KfGf468" Name="Phase" Kind="OutputPin" />
+            <Pin Id="NNrrz99gtI2OwluP96qmKw" Name="On New Cycle" Kind="OutputPin" />
+            <Pin Id="DaJiWYLwAS4MwJY3N7vKhr" Name="Cycles" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="T6AT710CS6dL7JdtOOrXmi" Name="Create" />
         <Patch Id="T5VprFlt0kwMND7uwE3CEt" Name="Update" />
@@ -417,8 +430,6 @@
         <Link Id="FlG2iMgKK7oM1GY7i3Zgag" Ids="BxA8WSUVDivOIP0wnYiGmO,SclfDnV0LtkNrbI5RG3cVd" />
         <Link Id="JPlJsmRdwfgPyZnT6eXzfu" Ids="HPVifjO2IXKNfC03LAspIm,NOr2JnWAWhzPkzIpNk3LdK" />
         <Link Id="SwXmpiXK4iNNApcaOBaxtf" Ids="Bp4ADhFRWjMNqWEWkQf8jw,PWoUIfF2Hm9NtANLqF9Vss" />
-        <Link Id="DwIg8PqS1VyNP7RQvvKrOt" Ids="QQGioiwrZSkONQBmvYO7J4,AkLYww7jBfmOcjwoaRZmA9" />
-        <Link Id="J3n5so90MeqQGSzsEwCWki" Ids="AkLYww7jBfmOcjwoaRZmA9,OdWLmyF0suCOuN6UCNODhR,GoTeJ1m9BE1NNuPEZyqm5S" />
         <Link Id="NoJRNHwiJaLMWyYpDTzppQ" Ids="QQGioiwrZSkONQBmvYO7J4,RNuggaYgi7vOWatAVc4Fpr" />
         <Link Id="GQWBpSvPYtPOEjXuyJ6Edo" Ids="U6COCiufjfRPstCraJh9eM,Tz8mm0dYTL9NmrovHygtjN" />
         <Link Id="MTrtUcQswL6OTrFDUFMVbS" Ids="Tz8mm0dYTL9NmrovHygtjN,JOgHQb36VycLF2o9mWCOt6" />
@@ -440,6 +451,7 @@
         <Link Id="N2fhKvCaWOVOm3jLNOxFxV" Ids="QtR7dEsnUqKPy4u5aaY0JB,O341HdW4nKBM196xE2XXuQ" />
         <Link Id="Uy7FSAB0bF5MYM3cyouJJA" Ids="LiNipRnfMzsNJhoZQ5l50U,AKjGYYhKcVHM51DeRN966b" />
         <Link Id="MLOXywwYGUZM0nS4Qj5G04" Ids="Poz1IuwMdzcLzcKv8GZbmu,JvNpBDCW5S2MU0h1USRiS4" />
+        <Link Id="PLAgBjdlLv2PlqbnhtRX8I" Ids="DaJiWYLwAS4MwJY3N7vKhr,MB0NC5IdF4zM1Ohwd4oTU0" />
       </Patch>
     </Node>
   </Patch>

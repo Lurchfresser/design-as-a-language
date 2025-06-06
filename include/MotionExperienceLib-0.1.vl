@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="ESp0r2Bb2JOPFyJ1y1rRgU" LanguageVersion="2024.6.7" Version="0.128">
-  <NugetDependency Id="ExBi9Jzz3sONZa7Kw9qtB0" Location="VL.CoreLib" Version="2024.6.7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="ESp0r2Bb2JOPFyJ1y1rRgU" LanguageVersion="2025.7.0-0361-gd2ce43ef49" Version="0.128">
+  <NugetDependency Id="ExBi9Jzz3sONZa7Kw9qtB0" Location="VL.CoreLib" Version="2025.7.0-0361-gd2ce43ef49" />
   <Patch Id="FDirrQKGHCHMMF9WxIllwN">
     <Canvas Id="HWa6UakjfL2NPgzb586Z5N" DefaultCategory="MXL" CanvasType="FullCategory">
       <!--
@@ -274,12 +274,13 @@
                 <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
               </p:NodeReference>
               <Pin Id="N351GvxzyMBP4oRdGN4wdz" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="Gwrg74LyMReLa2t7p5hETT" Name="Bounds" Kind="InputPin" DefaultValue="796, 415.5, 692.5, 530.5" IsHidden="true" />
+              <Pin Id="Gwrg74LyMReLa2t7p5hETT" Name="Bounds" Kind="InputPin" DefaultValue="856.5, 297.5, 692.5, 530.5" IsHidden="true" />
               <Pin Id="IUkdq1CRGuTMySas7WtyCS" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
               <Pin Id="GV1z3yMFeBBNfafcjA9Ez7" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
               <Pin Id="LQWeUoEzKaqM6fpvk8rpV4" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
               <Pin Id="DNLjEYyHzlYQchPcnJW8XJ" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
               <Pin Id="DK84CwJ6siUPkG4peZkvrA" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
+              <Pin Id="PWZs5XvisuxMaSUzBwmw8k" Name="Input Priority" Kind="InputPin" IsHidden="true" />
               <Pin Id="AX31xfCLxcXLNOAUx0i7Bd" Name="Input" Kind="InputPin" />
               <Pin Id="GENdEk44oYWNXFSkBDKGUX" Name="Camera" Kind="InputPin" />
               <Pin Id="Cv7sOOxq19uL7jSNrW9v2D" Name="Enable Default Camera" Kind="InputPin" />
@@ -307,6 +308,7 @@
               <Pin Id="MS1IJA8GSl1MMjeCFYuiWw" Name="Bind Depth As Resource During Transparent Rendering" Kind="InputPin" IsHidden="true" />
               <Pin Id="Gum7E4KGsfiNoE8OEBzTPq" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
               <Pin Id="VdiQO2RD78hNVBJZerRGng" Name="Depth Buffer" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="HxrDdzbmapMQY0iwj3HZBH" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
             </Node>
             <ControlPoint Id="SGIBs7dQuVFQMpBH8VS63B" Bounds="377,215" />
             <Node Bounds="578,405,65,19" Id="NFDRLkOuJQSLZGkg1OaXSK">
@@ -351,6 +353,7 @@
               <Pin Id="Mlc1lqflrFiNdldGZ4k9nJ" Name="Channel" Kind="OutputPin" />
               <Pin Id="JV0otoUj9YbN3auZNRrSe2" Name="Value" Kind="OutputPin" />
               <Pin Id="MZ9XJQieU6DNGRUQoe1iyr" Name="Path" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="NOmCnyz8xXnPOH0cbRpCtu" Name="Author" Kind="InputPin" IsHidden="true" />
             </Node>
             <Pad Id="P8CyOMUAEk5ONI3kPVE5e9" Comment="Path" Bounds="552,742,72,15" ShowValueBox="true" isIOBox="true" Value="WindowSize">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -1432,6 +1435,7 @@
                   <Pin Id="KxPYOuS1DhGNTDpDNUbKB8" Name="Children" Kind="InputPin" />
                   <Pin Id="IRf7QDkN9aMOAGThXeacqm" Name="Name" Kind="InputPin" />
                   <Pin Id="FglS4XSXypMNlmKrGsZdU1" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="Nbnp8LILBxeOqCbihYXwYZ" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="H69EuTh9lioP2DpMHw2WxE" Name="Entity" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="391,419,58,19" Id="GoOJohp6xOFN96jM7T5s9T">
@@ -2220,8 +2224,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="GkVC99fh9TrNYZI5WXPM8t" Location="VL.Stride.Runtime" Version="2024.6.7" />
-  <NugetDependency Id="DQfluf0819zM2vR4PZ79yQ" Location="VL.Skia" Version="2024.6.7" />
+  <NugetDependency Id="GkVC99fh9TrNYZI5WXPM8t" Location="VL.Stride.Runtime" Version="2025.7.0-0361-gd2ce43ef49" />
+  <NugetDependency Id="DQfluf0819zM2vR4PZ79yQ" Location="VL.Skia" Version="2025.7.0-0361-gd2ce43ef49" />
   <NugetDependency Id="OIh99LGOAEDPk0OPWLShVh" Location="VL.MediaPipe" Version="0.6.1-alpha" />
-  <NugetDependency Id="SksPguZNjkeLrzXsQfPRvQ" Location="VL.Stride.TextureFX" Version="2024.6.7" />
+  <NugetDependency Id="SksPguZNjkeLrzXsQfPRvQ" Location="VL.Stride.TextureFX" Version="2025.7.0-0361-gd2ce43ef49" />
 </Document>
