@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="NNJbtVSrn0lMDfgCmAWoxx" LanguageVersion="2024.6.7" Version="0.128">
-  <NugetDependency Id="CWglam390TRL2P54L8cK2z" Location="VL.CoreLib" Version="2024.6.7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="NNJbtVSrn0lMDfgCmAWoxx" LanguageVersion="2025.7.0-0361-gd2ce43ef49" Version="0.128">
+  <NugetDependency Id="CWglam390TRL2P54L8cK2z" Location="VL.CoreLib" Version="2025.7.0-0361-gd2ce43ef49" />
   <Patch Id="UolgdqGrL6PP9hrjGtdLy1">
     <Canvas Id="GBNkCBF2h4yQHs1JYKzpyz" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -471,6 +471,7 @@
             <Pin Id="UHNYh2W2xRuNSih42DTPtu" Name="Output Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="R7CEaVB89RgPoT0cd91NpH" Name="Render Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="VaPZ4T2eO78OQnIDzK7agH" Name="Enabled" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="BuNdsQbHKIxPbBrcl4osG2" Name="State Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="QjPwKnpvjMiNOFP453Xme1" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="803,617,25,19" Id="Pl1Q2SUGRC5P1c7kQsNTAV">
@@ -679,10 +680,11 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PNn99u2TJaPNa4kyKMNvZ8" Location="VL.Skia" Version="2024.6.7" />
-  <NugetDependency Id="RLnAhJGJiOhNpvxjNs3sGx" Location="VL.Stride" Version="2024.6.7" />
+  <NugetDependency Id="PNn99u2TJaPNa4kyKMNvZ8" Location="VL.Skia" Version="2025.7.0-0361-gd2ce43ef49" />
+  <NugetDependency Id="RLnAhJGJiOhNpvxjNs3sGx" Location="VL.Stride" Version="2025.7.0-0361-gd2ce43ef49" />
   <DocumentDependency Id="M9eO0PV1u9GLwA8Blm13sL" Location="./include/MotionExperienceLib-0.1.vl" />
-  <NugetDependency Id="Fhqi1kBJrlbNJ9ojH0aDk8" Location="VL.Stride.TextureFX" Version="2024.6.7" />
-  <NugetDependency Id="VE6xoSSsqCiQNFxQ29Y9fq" Location="VL.Video" Version="2024.6.7" />
+  <NugetDependency Id="Fhqi1kBJrlbNJ9ojH0aDk8" Location="VL.Stride.TextureFX" Version="2025.7.0-0361-gd2ce43ef49" />
+  <NugetDependency Id="VE6xoSSsqCiQNFxQ29Y9fq" Location="VL.Video" Version="2025.7.0-0361-gd2ce43ef49" />
   <NugetDependency Id="ThPYIMXEysGL0ioncE7mVA" Location="VL.Addons" Version="0.4.2" />
+  <DocumentDependency Id="Ngkzqr3642TLT70ouq7n4N" Location="./include/MotionExperienceLib-0.3.vl" />
 </Document>

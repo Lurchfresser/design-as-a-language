@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="ESp0r2Bb2JOPFyJ1y1rRgU" LanguageVersion="2024.6.7" Version="0.128">
-  <NugetDependency Id="ExBi9Jzz3sONZa7Kw9qtB0" Location="VL.CoreLib" Version="2024.6.7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="ESp0r2Bb2JOPFyJ1y1rRgU" LanguageVersion="2025.7.0-0361-gd2ce43ef49" Version="0.128">
+  <NugetDependency Id="ExBi9Jzz3sONZa7Kw9qtB0" Location="VL.CoreLib" Version="2025.7.0-0361-gd2ce43ef49" />
   <Patch Id="FDirrQKGHCHMMF9WxIllwN">
     <Canvas Id="HWa6UakjfL2NPgzb586Z5N" DefaultCategory="MXL" CanvasType="FullCategory">
       <!--
@@ -280,12 +280,13 @@
                 <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
               </p:NodeReference>
               <Pin Id="N351GvxzyMBP4oRdGN4wdz" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="Gwrg74LyMReLa2t7p5hETT" Name="Bounds" Kind="InputPin" DefaultValue="0, 23, 1920, 1009" IsHidden="true" />
+              <Pin Id="Gwrg74LyMReLa2t7p5hETT" Name="Bounds" Kind="InputPin" DefaultValue="1049.6, 30.4, 485.6, 784.8" IsHidden="true" />
               <Pin Id="IUkdq1CRGuTMySas7WtyCS" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
               <Pin Id="GV1z3yMFeBBNfafcjA9Ez7" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
               <Pin Id="LQWeUoEzKaqM6fpvk8rpV4" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
               <Pin Id="DNLjEYyHzlYQchPcnJW8XJ" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
               <Pin Id="DK84CwJ6siUPkG4peZkvrA" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
+              <Pin Id="Ob5D5FFAMTQMGeUTp6oNdL" Name="Input Priority" Kind="InputPin" IsHidden="true" />
               <Pin Id="AX31xfCLxcXLNOAUx0i7Bd" Name="Input" Kind="InputPin" />
               <Pin Id="GENdEk44oYWNXFSkBDKGUX" Name="Camera" Kind="InputPin" />
               <Pin Id="Cv7sOOxq19uL7jSNrW9v2D" Name="Enable Default Camera" Kind="InputPin" />
@@ -313,6 +314,7 @@
               <Pin Id="MS1IJA8GSl1MMjeCFYuiWw" Name="Bind Depth As Resource During Transparent Rendering" Kind="InputPin" IsHidden="true" />
               <Pin Id="Gum7E4KGsfiNoE8OEBzTPq" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
               <Pin Id="VdiQO2RD78hNVBJZerRGng" Name="Depth Buffer" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="FRmsWjCWIXBP68bhqwBrqi" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
             </Node>
             <ControlPoint Id="SGIBs7dQuVFQMpBH8VS63B" Bounds="497,141" />
             <Node Bounds="538,470,65,19" Id="NFDRLkOuJQSLZGkg1OaXSK">
@@ -357,6 +359,7 @@
               <Pin Id="Mlc1lqflrFiNdldGZ4k9nJ" Name="Channel" Kind="OutputPin" />
               <Pin Id="JV0otoUj9YbN3auZNRrSe2" Name="Value" Kind="OutputPin" />
               <Pin Id="MZ9XJQieU6DNGRUQoe1iyr" Name="Path" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="SMjpFCFAyXeL3yi1RmyymR" Name="Author" Kind="InputPin" IsHidden="true" />
             </Node>
             <Pad Id="P8CyOMUAEk5ONI3kPVE5e9" Comment="Path" Bounds="512,821,72,15" ShowValueBox="true" isIOBox="true" Value="WindowSize">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -1558,6 +1561,7 @@
                   <Pin Id="N40KueLD7lOMDpiiewV9ip" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="VRQIPybe3RLPQNiZ1Ng4FW" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
                   <Pin Id="GTdqLEwN38NN9iH59IEbjy" Name="Input" Kind="InputPin" />
+                  <Pin Id="OjqEoAYe1klNY8Q2kyd5q3" Name="Title" Kind="InputPin" />
                   <Pin Id="NVNlrp6APBJQLrab1ch0sS" Name="Color" Kind="InputPin" />
                   <Pin Id="VugYFzKgnJBPT1pHbCXiJf" Name="Clear" Kind="InputPin" />
                   <Pin Id="D8KFZveOvNRP5cH5x5Z23c" Name="Space" Kind="InputPin" />
@@ -1651,6 +1655,7 @@
                   <Pin Id="KxPYOuS1DhGNTDpDNUbKB8" Name="Children" Kind="InputPin" />
                   <Pin Id="IRf7QDkN9aMOAGThXeacqm" Name="Name" Kind="InputPin" />
                   <Pin Id="FglS4XSXypMNlmKrGsZdU1" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="DXEfEw0B5TPOFIis3TRM5Y" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="H69EuTh9lioP2DpMHw2WxE" Name="Entity" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="391,419,58,19" Id="GoOJohp6xOFN96jM7T5s9T">
@@ -1736,6 +1741,7 @@
               <Pin Id="E1ycajVA0tfOI5O3K3iIUC" Name="Component" Kind="InputPin" />
               <Pin Id="PubxSLhRZHHMRJHCrjEB37" Name="Name" Kind="InputPin" />
               <Pin Id="Sx97vLiqx9MMBo4MusTTUZ" Name="Enabled" Kind="InputPin" />
+              <Pin Id="BwSk1OBi9wuNS4vxtvjFm8" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="Q50Prm0muMSMB5asfNOiWz" Name="Entity" Kind="OutputPin" />
             </Node>
             <Node Bounds="359,822,229,80" Id="MfThoBSfIGzPVjAQsAIK67">
@@ -1763,6 +1769,7 @@
                   <Pin Id="TGWZH8vXYk7Pveapg47RDR" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
                   <Pin Id="LzQ7FOvHclvPh0f1mrAnfV" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
                   <Pin Id="II7FPKN9DiWLqmnOQbNpxf" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="NusSkarPBaCNgF6iprp53b" Name="Input Priority" Kind="InputPin" IsHidden="true" />
                   <Pin Id="B3C3t31cHDjNWeRKtCd4Hb" Name="Input" Kind="InputPin" />
                   <Pin Id="Q9u8ogUi5VjOP1ZHnyUoTi" Name="Camera" Kind="InputPin" />
                   <Pin Id="HbNOvqeHZwUOL1O19ux4H1" Name="Enable Default Camera" Kind="InputPin" />
@@ -1790,6 +1797,7 @@
                   <Pin Id="IZkX5z9znlhPpjXkn8jRZ9" Name="Bind Depth As Resource During Transparent Rendering" Kind="InputPin" IsHidden="true" />
                   <Pin Id="NmU4fWfzwZbLIdafjjxCED" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="HQnTsPDHTJuM00Ym0QShfJ" Name="Depth Buffer" Kind="OutputPin" IsHidden="true" />
+                  <Pin Id="Q8ASSU95nnuPbeBOLTlYPu" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
                 </Node>
               </Patch>
               <Pin Id="FJVvBwT3kzlNQPHp0kWeIg" Name="Reset" Kind="InputPin" IsHidden="true" />
@@ -2524,9 +2532,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="GkVC99fh9TrNYZI5WXPM8t" Location="VL.Stride.Runtime" Version="2024.6.7" />
-  <NugetDependency Id="DQfluf0819zM2vR4PZ79yQ" Location="VL.Skia" Version="2024.6.7" />
+  <NugetDependency Id="GkVC99fh9TrNYZI5WXPM8t" Location="VL.Stride.Runtime" Version="2025.7.0-0361-gd2ce43ef49" />
+  <NugetDependency Id="DQfluf0819zM2vR4PZ79yQ" Location="VL.Skia" Version="2025.7.0-0361-gd2ce43ef49" />
   <NugetDependency Id="OIh99LGOAEDPk0OPWLShVh" Location="VL.MediaPipe" Version="0.6.1-alpha" />
-  <NugetDependency Id="SksPguZNjkeLrzXsQfPRvQ" Location="VL.Stride.TextureFX" Version="2024.6.7" />
-  <NugetDependency Id="VVLZ5yFMQS4Ld7tC2yIO5E" Location="VL.Stride" Version="2024.6.7" />
+  <NugetDependency Id="SksPguZNjkeLrzXsQfPRvQ" Location="VL.Stride.TextureFX" Version="2025.7.0-0361-gd2ce43ef49" />
+  <NugetDependency Id="VVLZ5yFMQS4Ld7tC2yIO5E" Location="VL.Stride" Version="2025.7.0-0361-gd2ce43ef49" />
 </Document>

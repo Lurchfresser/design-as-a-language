@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="AMiLd6xKg39Nye3ZFAj2uw" LanguageVersion="2024.6.7" Version="0.128">
-  <NugetDependency Id="M0xAkiHkgC6MM722QikN43" Location="VL.CoreLib" Version="2024.6.7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="AMiLd6xKg39Nye3ZFAj2uw" LanguageVersion="2025.7.0-0361-gd2ce43ef49" Version="0.128">
+  <NugetDependency Id="M0xAkiHkgC6MM722QikN43" Location="VL.CoreLib" Version="2025.7.0-0361-gd2ce43ef49" />
   <Patch Id="SprfqOQKxz1OcOX8Mfx2xC">
     <Canvas Id="PYTGwIwW1I4MjokDC2BmXp" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -30,7 +30,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="FBe5ryaTh0iPBDzL35786m" Comment="Enabled" Bounds="465,394,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="FBe5ryaTh0iPBDzL35786m" Comment="Enabled" Bounds="465,394,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -99,7 +99,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="MLkPwL676i4OXBVtEgl0UO" Comment="Topic" Bounds="419,731,90,15" ShowValueBox="true" isIOBox="true" Value="foo/bar">
+          <Pad Id="MLkPwL676i4OXBVtEgl0UO" Comment="Topic" Bounds="419,731,90,15" ShowValueBox="true" isIOBox="true" Value="button-press">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -332,6 +332,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="QfP6awy0ofrLqCorjdTZrH" Location="VL.IO.MQTT" Version="1.2.4" />
-  <NugetDependency Id="CsIpcxFmid4LeknIrhTi1r" Location="VL.Audio" Version="1.8.2" />
-  <NugetDependency Id="SinihFjgh1YOK4bVUCfIA1" Location="VL.Video" Version="2024.6.7" />
+  <NugetDependency Id="CsIpcxFmid4LeknIrhTi1r" Location="VL.Audio" Version="1.9.13" />
+  <NugetDependency Id="SinihFjgh1YOK4bVUCfIA1" Location="VL.Video" Version="2025.7.0-0361-gd2ce43ef49" />
 </Document>

@@ -1,8 +1,169 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="C2UZ0fXB6N4OjQbgafLobo" LanguageVersion="2024.6.7" Version="0.128">
-  <NugetDependency Id="B5OFQruv1xNLN2OiBD6aOm" Location="VL.CoreLib" Version="2024.6.7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="C2UZ0fXB6N4OjQbgafLobo" LanguageVersion="2025.7.0-0361-gd2ce43ef49" Version="0.128">
+  <NugetDependency Id="B5OFQruv1xNLN2OiBD6aOm" Location="VL.CoreLib" Version="2025.7.0-0361-gd2ce43ef49" />
   <Patch Id="GSIHigRlEuqOxwSrlSytsx">
-    <Canvas Id="NsyDY7ktk4uM6S1vhoubvE" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <Canvas Id="NsyDY7ktk4uM6S1vhoubvE" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
+      <!--
+
+    ************************ SRTVideo ************************
+
+-->
+      <Node Name="SRTVideo" Bounds="200,100" Id="DQ9Abt38x5IPri959aRoxO">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <Patch Id="Q3TvJ8sGapiMRz4y7QW6H1">
+          <Canvas Id="AxlW131ssNmQXCROJJXP85" CanvasType="Group">
+            <Pad Id="CajN1gbVCamPH0KprkRR1i" Comment="text-test" Bounds="554,695,147,22" ShowValueBox="true" isIOBox="true" Value="test">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="551,507,45,19" Id="VyWXFk9LtkiLGV1TKrAgLa">
+              <p:NodeReference LastCategoryFullName="SRT" LastDependency="VL.SRT.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="SRT" />
+              </p:NodeReference>
+              <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+              <Pin Id="E7QMYN9Sx5WMaaTzUGMrPs" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="CvJi7VgcwyoN4TIN4jUCNy" Name="filename" Kind="InputPin" />
+              <Pin Id="BNWzwxxwiDbN6eDIRmVhwC" Name="Read" Kind="InputPin" />
+              <Pin Id="QITb79fparzQJlvl09sMAx" Name="Time" Kind="InputPin" />
+              <Pin Id="QXk5YpjHyI5Mnl1babLHY8" Name="State Output" Kind="OutputPin" />
+              <Pin Id="U6Xw6gJXtymPPik1JXQjlL" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="NSSQfWxN6sLPU64uur7QUY" Comment="filename" Bounds="598,362,224,15" ShowValueBox="true" isIOBox="true" Value="assets\srt\[Russian] Pussy Riot - БЕСИТ _ RAGE (Official Music Video) [DownSub.com].srt">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="PxokedseduFNkP9Va9N6sV" Comment="" Bounds="550,552,368,100" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="DIhNbqTIdo3MqQSs88i0Kn" Comment="Read" Bounds="618,389,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Node Bounds="336,414,165,19" Id="PCL1WLYCTYUOaACi8Z33z9">
+              <p:NodeReference LastCategoryFullName="Video" LastDependency="VL.Video.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="VideoPlayer" />
+              </p:NodeReference>
+              <Pin Id="UDeC8HKRtR9P0PIqURr4cK" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="IfqRHjBPfqjOC7FtsqnKTq" Name="Filename" Kind="InputPin" />
+              <Pin Id="BI2rPadFrIFQCCvytijHyQ" Name="Play" Kind="InputPin" />
+              <Pin Id="OegOEywKT4DL9Y7NCwyyYk" Name="Rate" Kind="InputPin" DefaultValue="1" />
+              <Pin Id="SH7Q8nbA973LXdDNiIqvLM" Name="Seek Time" Kind="InputPin" />
+              <Pin Id="VRTdY764kbtOHpzO9l7M1m" Name="Seek" Kind="InputPin" />
+              <Pin Id="TKOFWfKY3ejONgA9gZrnUv" Name="Loop Start Time" Kind="InputPin" DefaultValue="15.19" />
+              <Pin Id="EMAkibIypjbLHPnYa1PfH0" Name="Loop End Time" Kind="InputPin" DefaultValue="34.06" />
+              <Pin Id="T4Lqzt2kGkaO70JrK3tYuF" Name="Loop" Kind="InputPin" DefaultValue="False" />
+              <Pin Id="K0f3VmNUwBeMT6n1nfcSLn" Name="Volume" Kind="InputPin" />
+              <Pin Id="AffPrJ7KWezLBTr7zZp5fR" Name="Output" Kind="OutputPin" />
+              <Pin Id="NIQFBQjsDoAMLqdwCsEjj6" Name="Playing" Kind="OutputPin" />
+              <Pin Id="BduoTBtuq0AMTXmfDkzIgO" Name="Current Time" Kind="OutputPin" />
+              <Pin Id="L6gv0HDA1KwLnk9ThaPUPi" Name="Duration" Kind="OutputPin" />
+              <Pin Id="V5u3d4c9zL5LQfbd3FrV9q" Name="Ready State" Kind="OutputPin" />
+              <Pin Id="FGbYV5CmzOAMgv1VUfHD4y" Name="Error Code" Kind="OutputPin" />
+              <Pin Id="BA6TaL7djmiP7AeZxG6XdG" Name="Texture Size" Kind="InputPin" IsHidden="true" />
+              <Pin Id="VMSYEYPGpLzLMFSldEVj3f" Name="Source Bounds" Kind="InputPin" IsHidden="true" />
+              <Pin Id="IbmWQmgD2qfMfzICvKTJWD" Name="Border Color" Kind="InputPin" IsHidden="true" />
+            </Node>
+            <Pad Id="TiZLOyegKGLMnIMls2WHOI" Comment="Filename" Bounds="359,312,140,15" ShowValueBox="true" isIOBox="true" Value="assets\video\Pussy Riot - БЕСИТ _ RAGE (Official Music Video).mp4">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="336,495,119,19" Id="V4vluv1sR9pOftjV8Ol6Wh">
+              <p:NodeReference LastCategoryFullName="Stride.Video" LastDependency="VL.Stride.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="VideoSourceToTexture" />
+              </p:NodeReference>
+              <Pin Id="D5AwXU5eCzBM4WZIo1dC70" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="C05TlRiJ7QANehQg7wxcSu" Name="Input" Kind="InputPin" />
+              <Pin Id="DDh4sc1SQLkM3Br5bVbxbL" Name="Fallback" Kind="InputPin" />
+              <Pin Id="BPaGDemfFHfOM0w77LSYQ7" Name="Prefer Push" Kind="InputPin" />
+              <Pin Id="Tbbjckfryo3P55NQTTuHsg" Name="Prefer Gpu" Kind="InputPin" DefaultValue="False" />
+              <Pin Id="S37yqUXE8UxOVFG3qVsFfg" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="N2zOjo3uKzAN0oFNX19h0w" Comment="Play" Bounds="420,355,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Node Bounds="552,657,34,19" Id="GV8vzdL6TSePQ0vz0oFXBT">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <FullNameCategoryReference ID="Primitive.String" />
+                <Choice Kind="OperationCallFlag" Name="Join" />
+              </p:NodeReference>
+              <Pin Id="VgbJfaj9yd3LgG9bYcMjV8" Name="Separator" Kind="InputPin" />
+              <Pin Id="T0Kgv6FWxzIQL9yzeBn9UX" Name="Values" Kind="InputPin" />
+              <Pin Id="KNQ5Hcz5k8DL1t5gHsEQJF" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="CUM3W753cmkNyhowv5ynQi" Bounds="355,210" />
+            <ControlPoint Id="Flbj1iWbXxINmmTQWVVmQQ" Bounds="416,208" />
+            <ControlPoint Id="TUqUoI1UJB0LbS89TfzzN3" Bounds="681,229" />
+            <ControlPoint Id="RQCMWwkuNDGNPtafCZNf18" Bounds="331,786" />
+            <ControlPoint Id="PcbpzVudBfwQZxHWkszT5I" Bounds="552,796" />
+            <ControlPoint Id="QbACIaVBo4IO4ih2B0vNLC" Bounds="454,205" />
+            <ControlPoint Id="R9CVuP7cQAXMitt3kX7rdK" Bounds="493,237" />
+            <ControlPoint Id="RTvnacfouSAMdHLGq0goFO" Bounds="546,255" />
+            <ControlPoint Id="BaEuanYu2b6PGqp9Qc1l0E" Bounds="579,301" />
+          </Canvas>
+          <Patch Id="DWIgAMhD4MKM0L3Jox4QyJ" Name="Create" />
+          <Patch Id="TZUi3a2wKgFPnzryDauVrU" Name="Update">
+            <Pin Id="JPpBCKlDIZiMhLiydiGuyQ" Name="Videofile" Kind="InputPin" />
+            <Pin Id="G0OnFA5TOmfN4i9zkaFC7M" Name="SRTFile" Kind="InputPin" />
+            <Pin Id="FSwnYHMv9F3MesRT43jb2A" Name="play" Kind="InputPin" />
+            <Pin Id="TsZHJtuz5MWOg3Ynmu88hn" Name="Loop Start Time" Kind="InputPin" />
+            <Pin Id="IuxkNrEnCaTPFl4HW9Inlv" Name="Loop End Time" Kind="InputPin" />
+            <Pin Id="KhJlWHE4UJsP1ECV9KAVEJ" Name="Volume" Kind="InputPin" />
+            <Pin Id="BZEi4UEpohvO9RkMm60MFN" Name="Read" Kind="InputPin" />
+            <Pin Id="K3mwOHDEQWCNyqpRn36qJz" Name="Video" Kind="OutputPin" />
+            <Pin Id="Vud4oHypsCiOzWoOlv4f48" Name="Text" Kind="OutputPin" />
+          </Patch>
+          <ProcessDefinition Id="JcqT7I5WS9dMpKfIXdGttP">
+            <Fragment Id="BWeK9qpAMzyN1cjAnqsIYv" Patch="DWIgAMhD4MKM0L3Jox4QyJ" Enabled="true" />
+            <Fragment Id="UPLZE5KcYb3N9wmU5cJNtB" Patch="TZUi3a2wKgFPnzryDauVrU" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="K5vp8SwlUgmNfxFPUmrkD9" Ids="NSSQfWxN6sLPU64uur7QUY,CvJi7VgcwyoN4TIN4jUCNy" />
+          <Link Id="GaVebyCwlCeNpg3DWUkFZn" Ids="U6Xw6gJXtymPPik1JXQjlL,PxokedseduFNkP9Va9N6sV" />
+          <Link Id="Btfj5mPfzvcN0eTeg68Rlz" Ids="DIhNbqTIdo3MqQSs88i0Kn,BNWzwxxwiDbN6eDIRmVhwC" />
+          <Link Id="SoyAyhknZOUNpM5FPEFH5Y" Ids="TiZLOyegKGLMnIMls2WHOI,IfqRHjBPfqjOC7FtsqnKTq" />
+          <Link Id="P0jSBKpnF09Lk2DSF4aIMh" Ids="AffPrJ7KWezLBTr7zZp5fR,C05TlRiJ7QANehQg7wxcSu" />
+          <Link Id="CKCRTij0GTIPDnt611IiCW" Ids="BduoTBtuq0AMTXmfDkzIgO,QITb79fparzQJlvl09sMAx" />
+          <Link Id="OR9BJnowZ98Pyue81nkhhR" Ids="N2zOjo3uKzAN0oFNX19h0w,BI2rPadFrIFQCCvytijHyQ" />
+          <Link Id="UKvFdKjorluLay4sXA9zTE" Ids="PxokedseduFNkP9Va9N6sV,T0Kgv6FWxzIQL9yzeBn9UX" />
+          <Link Id="Lzr06SIwSoSMydctdskoQY" Ids="KNQ5Hcz5k8DL1t5gHsEQJF,CajN1gbVCamPH0KprkRR1i" />
+          <Link Id="AFY0GbRpTMoNKJRZ8larTj" Ids="CUM3W753cmkNyhowv5ynQi,TiZLOyegKGLMnIMls2WHOI" />
+          <Link Id="D6qWMRbY4TDNjI8EQpExWO" Ids="JPpBCKlDIZiMhLiydiGuyQ,CUM3W753cmkNyhowv5ynQi" IsHidden="true" />
+          <Link Id="QlEuoAjMJ7MNiKk6dsazb4" Ids="Flbj1iWbXxINmmTQWVVmQQ,NSSQfWxN6sLPU64uur7QUY" />
+          <Link Id="TRN7ba7oSCQQH4uf4pYr9I" Ids="G0OnFA5TOmfN4i9zkaFC7M,Flbj1iWbXxINmmTQWVVmQQ" IsHidden="true" />
+          <Link Id="SyghNyjywvCLJjPfgVMgGK" Ids="TUqUoI1UJB0LbS89TfzzN3,DIhNbqTIdo3MqQSs88i0Kn" />
+          <Link Id="BRHCJ1ifCeyPqgGWrue16v" Ids="BZEi4UEpohvO9RkMm60MFN,TUqUoI1UJB0LbS89TfzzN3" IsHidden="true" />
+          <Link Id="SSaeUw1joepLYTSd2q34sp" Ids="S37yqUXE8UxOVFG3qVsFfg,RQCMWwkuNDGNPtafCZNf18" />
+          <Link Id="N6ZibTHVeG7Ofhb3OxX70N" Ids="RQCMWwkuNDGNPtafCZNf18,K3mwOHDEQWCNyqpRn36qJz" IsHidden="true" />
+          <Link Id="B3SyoRd8q09LrqzYX2OXN6" Ids="CajN1gbVCamPH0KprkRR1i,PcbpzVudBfwQZxHWkszT5I" />
+          <Link Id="Babv6PRuzXrQEK1f6qczgi" Ids="PcbpzVudBfwQZxHWkszT5I,Vud4oHypsCiOzWoOlv4f48" IsHidden="true" />
+          <Link Id="QS2YuegDzDeQLEHR6LzrxY" Ids="QbACIaVBo4IO4ih2B0vNLC,N2zOjo3uKzAN0oFNX19h0w" />
+          <Link Id="PvGSGCoqhFZL0kbFIx2myL" Ids="FSwnYHMv9F3MesRT43jb2A,QbACIaVBo4IO4ih2B0vNLC" IsHidden="true" />
+          <Link Id="KaJiKp9aEswN0ZXcJhTQoN" Ids="R9CVuP7cQAXMitt3kX7rdK,TKOFWfKY3ejONgA9gZrnUv" />
+          <Link Id="KMEMsXZFgubNnUYzGgqnta" Ids="TsZHJtuz5MWOg3Ynmu88hn,R9CVuP7cQAXMitt3kX7rdK" IsHidden="true" />
+          <Link Id="L1yQnUrbAdwOqS4Uak78I2" Ids="RTvnacfouSAMdHLGq0goFO,EMAkibIypjbLHPnYa1PfH0" />
+          <Link Id="QGsZab3rIvOL4wJ3X5gowd" Ids="IuxkNrEnCaTPFl4HW9Inlv,RTvnacfouSAMdHLGq0goFO" IsHidden="true" />
+          <Link Id="DtI2Zpk45wnP7VkqkChcBx" Ids="BaEuanYu2b6PGqp9Qc1l0E,K0f3VmNUwBeMT6n1nfcSLn" />
+          <Link Id="DSpuoTWJxkPQMgXeYm22Nl" Ids="KhJlWHE4UJsP1ECV9KAVEJ,BaEuanYu2b6PGqp9Qc1l0E" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
     <!--
 
     ************************ Application ************************
@@ -15,7 +176,7 @@
       </p:NodeReference>
       <Patch Id="CFTZpoY419oOd8y1ilzJUi">
         <Canvas Id="Pow5elJbqGZNL5psPXGEfD" CanvasType="Group">
-          <Node Bounds="433,237,55,19" Id="DMsqEDJ9ZOxLVezj7Th9A7">
+          <Node Bounds="433,237,65,19" Id="DMsqEDJ9ZOxLVezj7Th9A7">
             <p:NodeReference LastCategoryFullName="Kairos" LastDependency="VL.Kairos.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Timeline" />
@@ -24,26 +185,18 @@
             <Pin Id="Az6xldrcN6ZNCo9pwi6VBp" Name="Model" Kind="InputPin">
               <p:DefaultValue xmlns:r="reflection" r:Version="2">
                 <Tracks>
-                  <Item Key="test-text">
-                    <Value ID="8d3ff144-b63a-4f21-89ce-039df0feea7a" r:Type="TrackModel (Timeline) [Kairos.Timeline.Track]">
-                      <Author_IDs>
-                        <Item>TimelineUI</Item>
-                      </Author_IDs>
-                      <Parameter Key="8e5b72dd-8ee9-4ddc-ac93-ced16c005c76" Path="test-text" Type_Full_Name="String [Primitive]" />
-                    </Value>
-                  </Item>
-                  <Item Key="rage">
-                    <Value ID="42dae646-f844-429b-b833-18be50e4193a" r:Type="TrackModel (Timeline) [Kairos.Timeline.Track]">
+                  <Item Key="track-selection">
+                    <Value ID="f1ba25c4-57fd-4316-8363-06697d1881f1" r:Type="TrackModel (Timeline) [Kairos.Timeline.Track]">
                       <Author_IDs>
                         <Item>TimelineUI</Item>
                       </Author_IDs>
                       <Items_Model>
-                        <Item Key="e3a2a957-c33c-424b-bb3a-a2483930f9d0">
-                          <Value ID="e3a2a957-c33c-424b-bb3a-a2483930f9d0" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
+                        <Item Key="62724f59-f04e-49e9-ae19-08aecb2bc9f4">
+                          <Value ID="62724f59-f04e-49e9-ae19-08aecb2bc9f4" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
                             <Author_IDs>
                               <Item></Item>
                             </Author_IDs>
-                            <Settings Alpha="1" Position="1.6">
+                            <Settings Alpha="1" Position="0.4">
                               <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
                               <Compositing_Model>
                                 <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
@@ -51,30 +204,15 @@
                               </Compositing_Model>
                               <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
                             </Settings>
-                            <Value r:Type="Float32 [Primitive]">0.19534682</Value>
+                            <Value r:Type="Integer32 [Primitive]">0</Value>
                           </Value>
                         </Item>
-                        <Item Key="a4698533-ae20-499e-8823-06ff7f7effe5">
-                          <Value ID="a4698533-ae20-499e-8823-06ff7f7effe5" Value_Source_Name="lfo-test" r:Type="LiveValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
-                            <Author_IDs>
-                              <Item>TimelineUI</Item>
-                            </Author_IDs>
-                            <Settings Alpha="1" Position="2">
-                              <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                              <Compositing_Model>
-                                <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                              </Compositing_Model>
-                              <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                            </Settings>
-                          </Value>
-                        </Item>
-                        <Item Key="6461d6d7-3409-48d3-8451-6c7cbe5d6015">
-                          <Value ID="6461d6d7-3409-48d3-8451-6c7cbe5d6015" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
+                        <Item Key="5cfb9dca-2fef-4404-a411-f2eccc4fe70e">
+                          <Value ID="5cfb9dca-2fef-4404-a411-f2eccc4fe70e" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
                             <Author_IDs>
                               <Item></Item>
                             </Author_IDs>
-                            <Settings Alpha="1" Position="0.2">
+                            <Settings Alpha="1" Position="2.6">
                               <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
                               <Compositing_Model>
                                 <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
@@ -82,11 +220,27 @@
                               </Compositing_Model>
                               <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
                             </Settings>
-                            <Value r:Type="Float32 [Primitive]">0.4760001</Value>
+                            <Value r:Type="Integer32 [Primitive]">2</Value>
+                          </Value>
+                        </Item>
+                        <Item Key="7afbab20-1d41-40f0-8a5c-0d7a389252d6">
+                          <Value ID="7afbab20-1d41-40f0-8a5c-0d7a389252d6" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
+                            <Author_IDs>
+                              <Item></Item>
+                            </Author_IDs>
+                            <Settings Alpha="1" Position="1.8">
+                              <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
+                              <Compositing_Model>
+                                <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                                <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
+                              </Compositing_Model>
+                              <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                            </Settings>
+                            <Value r:Type="Integer32 [Primitive]">1</Value>
                           </Value>
                         </Item>
                       </Items_Model>
-                      <Parameter Key="6c125c44-44c4-4bc2-8b27-f235a31d7310" Path="rage" Type_Full_Name="Float32 [Primitive]" />
+                      <Parameter Key="d6066887-ffff-4bab-8fcc-c56c4047ecda" Path="track-selection" Type_Full_Name="Integer32 [Primitive]" />
                     </Value>
                   </Item>
                 </Tracks>
@@ -94,250 +248,95 @@
             </Pin>
             <Pin Id="AxItaIAXozJME8Um7R2Azb" Name="Output" Kind="StateOutputPin" />
             <Pin Id="NoxhvN74vlFLUiVEMgAhSE" Name="Composition Name" Kind="InputPin" IsHidden="true" />
-            <Pin Id="F9vi6fBzItxNn6fNTq966S" Name="lfo-test" Kind="InputPin" PinGroupName="Input">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Float32" />
-                <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="CSqPkz17KGSLNRwG9ORGHh" Name="text-test" Kind="InputPin" />
           </Node>
-          <Node Bounds="557,301,71,19" Id="OO0QND1lA60LQ8hDqZbXxW">
+          <Node Bounds="520,232,71,19" Id="OO0QND1lA60LQ8hDqZbXxW">
             <p:NodeReference LastCategoryFullName="Kairos" LastDependency="VL.Kairos.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="KairosEditor" />
             </p:NodeReference>
             <Pin Id="F8RqgCiyIgaL4DkMxF83yB" Name="Model Stream" Kind="InputPin">
-              <p:DefaultValue ID="c9b83bad-00e4-40ab-a1f3-0b9ca469d32c" Imgui_Layout="[Window][DockSpaceViewport_11111111]&#xA;Pos=0,26&#xA;Size=1127,955&#xA;Collapsed=0&#xA;&#xA;[Window][Debug##Default]&#xA;Pos=60,60&#xA;Size=400,400&#xA;Collapsed=0&#xA;&#xA;[Window][###062b89d3-e0a1-402f-a6a1-005f539972ea]&#xA;Pos=0,26&#xA;Size=400,732&#xA;Collapsed=0&#xA;DockId=0x00000001,0&#xA;&#xA;[Window][###7a01cbc7-cca4-4ea3-8da0-c146a56b27c5]&#xA;Pos=444,26&#xA;Size=683,732&#xA;Collapsed=0&#xA;DockId=0x00000004,0&#xA;&#xA;[Window][###45d198c9-5abf-4982-b944-b2d3433637fc]&#xA;Pos=0,760&#xA;Size=1127,221&#xA;Collapsed=0&#xA;DockId=0x00000006,0&#xA;&#xA;[Window][New Track##__&lt;116&gt;]&#xA;Pos=125,125&#xA;Size=419,176&#xA;Collapsed=0&#xA;&#xA;[Window][New Live Value Keyframe##__&lt;101&gt;]&#xA;Pos=125,125&#xA;Size=431,176&#xA;Collapsed=0&#xA;&#xA;[Window][New Constant Value Keyframe##__&lt;104&gt;]&#xA;Pos=125,125&#xA;Size=405,145&#xA;Collapsed=0&#xA;&#xA;[Docking][Data]&#xA;DockSpace       ID=0x8B93E3BD Window=0xA787BDB4 Pos=0,26 Size=1127,955 Split=Y&#xA;  DockNode      ID=0x00000005 Parent=0x8B93E3BD SizeRef=882,732 Split=X&#xA;    DockNode    ID=0x00000003 Parent=0x00000005 SizeRef=442,955 Split=X&#xA;      DockNode  ID=0x00000001 Parent=0x00000003 SizeRef=400,955 Selected=0xC1262C8D&#xA;      DockNode  ID=0x00000002 Parent=0x00000003 SizeRef=40,955 CentralNode=1&#xA;    DockNode    ID=0x00000004 Parent=0x00000005 SizeRef=683,955 Selected=0x9769E659&#xA;  DockNode      ID=0x00000006 Parent=0x8B93E3BD SizeRef=882,221 Selected=0xCF9FF36A&#xA;&#xA;" r:Type="KairosEditorModel [Kairos]" xmlns:r="reflection" r:Version="2">
-                <Windows>
-                  <Item Key="45d198c9-5abf-4982-b944-b2d3433637fc">
-                    <Value ID="45d198c9-5abf-4982-b944-b2d3433637fc" r:Type="InspectorWindowModel [Kairos.Common]" />
-                  </Item>
-                  <Item Key="7a01cbc7-cca4-4ea3-8da0-c146a56b27c5">
-                    <Value Attached="True" ID="7a01cbc7-cca4-4ea3-8da0-c146a56b27c5" r:Type="KairosNodeUIWindowModel [Kairos.Common.KairosNodeUI]">
-                      <Content_Model Composition_Track_Folding="True" ID="8a63f187-6a12-43aa-909e-20f72bb85fb8" Output_Monitor_Folding="True" Target_Node_Path="C2UZ0fXB6N4OjQbgafLobo DMsqEDJ9ZOxLVezj7Th9A7.C2UZ0fXB6N4OjQbgafLobo MJTC26zq1FcOCRTGighAEg" Time_Grid_Snapping_Enabled="True" r:Type="TimelineUIModel [Kairos.TimelineUI.CompositionUI]">
-                        <Camera_Model Initial_Transformation="1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.22, 0, 0, 1" Maximum_Zoom="50" Minimum_Position_Bound="1.22, 0" Minimum_Zoom="0.01" Scroll_Speed="1, 1" Zoom_Speed="1">
-                          <Minimum_Position_Bound_Enabled Item1="False" Item2="True" />
-                        </Camera_Model>
-                        <Source_Model>
-                          <Tracks>
-                            <Item Key="test-text">
-                              <Value ID="8d3ff144-b63a-4f21-89ce-039df0feea7a" r:Type="TrackModel (Timeline) [Kairos.Timeline.Track]">
-                                <Author_IDs>
-                                  <Item>TimelineUI</Item>
-                                </Author_IDs>
-                                <Parameter Key="8e5b72dd-8ee9-4ddc-ac93-ced16c005c76" Path="test-text" Type_Full_Name="String [Primitive]" />
-                              </Value>
-                            </Item>
-                            <Item Key="rage">
-                              <Value ID="42dae646-f844-429b-b833-18be50e4193a" r:Type="TrackModel (Timeline) [Kairos.Timeline.Track]">
-                                <Author_IDs>
-                                  <Item>TimelineUI</Item>
-                                </Author_IDs>
-                                <Items_Model>
-                                  <Item Key="e3a2a957-c33c-424b-bb3a-a2483930f9d0">
-                                    <Value ID="e3a2a957-c33c-424b-bb3a-a2483930f9d0" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
-                                      <Author_IDs>
-                                        <Item></Item>
-                                      </Author_IDs>
-                                      <Settings Alpha="1" Position="1.6">
-                                        <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        <Compositing_Model>
-                                          <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                          <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        </Compositing_Model>
-                                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                      </Settings>
-                                      <Value r:Type="Float32 [Primitive]">0.19534682</Value>
-                                    </Value>
-                                  </Item>
-                                  <Item Key="a4698533-ae20-499e-8823-06ff7f7effe5">
-                                    <Value ID="a4698533-ae20-499e-8823-06ff7f7effe5" Value_Source_Name="lfo-test" r:Type="LiveValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
-                                      <Author_IDs>
-                                        <Item>TimelineUI</Item>
-                                      </Author_IDs>
-                                      <Settings Alpha="1" Position="2">
-                                        <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        <Compositing_Model>
-                                          <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                          <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        </Compositing_Model>
-                                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                      </Settings>
-                                    </Value>
-                                  </Item>
-                                  <Item Key="6461d6d7-3409-48d3-8451-6c7cbe5d6015">
-                                    <Value ID="6461d6d7-3409-48d3-8451-6c7cbe5d6015" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
-                                      <Author_IDs>
-                                        <Item></Item>
-                                      </Author_IDs>
-                                      <Settings Alpha="1" Position="0.2">
-                                        <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        <Compositing_Model>
-                                          <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                          <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        </Compositing_Model>
-                                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                      </Settings>
-                                      <Value r:Type="Float32 [Primitive]">0.4760001</Value>
-                                    </Value>
-                                  </Item>
-                                </Items_Model>
-                                <Parameter Key="6c125c44-44c4-4bc2-8b27-f235a31d7310" Path="rage" Type_Full_Name="Float32 [Primitive]" />
-                              </Value>
-                            </Item>
-                          </Tracks>
-                        </Source_Model>
-                        <Tracks>
-                          <Item Key="test-text">
-                            <Value Folding="True" Height="1" ID="8d3ff144-b63a-4f21-89ce-039df0feea7a" Value_View_Maximum="1">
-                              <Source_Model ID="8d3ff144-b63a-4f21-89ce-039df0feea7a">
-                                <Author_IDs>
-                                  <Item>TimelineUI</Item>
-                                </Author_IDs>
-                                <Parameter Key="8e5b72dd-8ee9-4ddc-ac93-ced16c005c76" Path="test-text" Type_Full_Name="String [Primitive]" />
-                              </Source_Model>
-                            </Value>
-                          </Item>
-                          <Item Key="rage">
-                            <Value Folding="True" Height="1" ID="42dae646-f844-429b-b833-18be50e4193a" Value_View_Maximum="1">
-                              <Source_Model ID="42dae646-f844-429b-b833-18be50e4193a">
-                                <Author_IDs>
-                                  <Item>TimelineUI</Item>
-                                </Author_IDs>
-                                <Items_Model>
-                                  <Item Key="e3a2a957-c33c-424b-bb3a-a2483930f9d0">
-                                    <Value ID="e3a2a957-c33c-424b-bb3a-a2483930f9d0" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
-                                      <Author_IDs>
-                                        <Item></Item>
-                                      </Author_IDs>
-                                      <Settings Alpha="1" Position="1.6">
-                                        <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        <Compositing_Model>
-                                          <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                          <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        </Compositing_Model>
-                                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                      </Settings>
-                                      <Value r:Type="Float32 [Primitive]">0.19534682</Value>
-                                    </Value>
-                                  </Item>
-                                  <Item Key="a4698533-ae20-499e-8823-06ff7f7effe5">
-                                    <Value ID="a4698533-ae20-499e-8823-06ff7f7effe5" Value_Source_Name="lfo-test" r:Type="LiveValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
-                                      <Author_IDs>
-                                        <Item>TimelineUI</Item>
-                                      </Author_IDs>
-                                      <Settings Alpha="1" Position="2">
-                                        <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        <Compositing_Model>
-                                          <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                          <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        </Compositing_Model>
-                                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                      </Settings>
-                                    </Value>
-                                  </Item>
-                                  <Item Key="6461d6d7-3409-48d3-8451-6c7cbe5d6015">
-                                    <Value ID="6461d6d7-3409-48d3-8451-6c7cbe5d6015" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
-                                      <Author_IDs>
-                                        <Item></Item>
-                                      </Author_IDs>
-                                      <Settings Alpha="1" Position="0.2">
-                                        <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        <Compositing_Model>
-                                          <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                          <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        </Compositing_Model>
-                                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                      </Settings>
-                                      <Value r:Type="Float32 [Primitive]">0.4760001</Value>
-                                    </Value>
-                                  </Item>
-                                </Items_Model>
-                                <Parameter Key="6c125c44-44c4-4bc2-8b27-f235a31d7310" Path="rage" Type_Full_Name="Float32 [Primitive]" />
-                              </Source_Model>
-                              <UI_Keyframes>
-                                <Item Key="e3a2a957-c33c-424b-bb3a-a2483930f9d0">
-                                  <Value ID="e3a2a957-c33c-424b-bb3a-a2483930f9d0" r:Type="ConstantValueKeyframeUIModel [Kairos.TimelineUI.KeyframeUI]">
-                                    <Source_Model ID="e3a2a957-c33c-424b-bb3a-a2483930f9d0">
-                                      <Author_IDs>
-                                        <Item></Item>
-                                      </Author_IDs>
-                                      <Settings Alpha="1" Position="1.6">
-                                        <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        <Compositing_Model>
-                                          <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                          <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        </Compositing_Model>
-                                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                      </Settings>
-                                      <Value r:Type="Float32 [Primitive]">0.19534682</Value>
-                                    </Source_Model>
-                                  </Value>
-                                </Item>
-                                <Item Key="a4698533-ae20-499e-8823-06ff7f7effe5">
-                                  <Value ID="a4698533-ae20-499e-8823-06ff7f7effe5" r:Type="LiveValueKeyframeUIModel [Kairos.TimelineUI.KeyframeUI]">
-                                    <Source_Model ID="a4698533-ae20-499e-8823-06ff7f7effe5" Value_Source_Name="lfo-test">
-                                      <Author_IDs>
-                                        <Item>TimelineUI</Item>
-                                      </Author_IDs>
-                                      <Settings Alpha="1" Position="2">
-                                        <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        <Compositing_Model>
-                                          <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                          <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        </Compositing_Model>
-                                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                      </Settings>
-                                    </Source_Model>
-                                  </Value>
-                                </Item>
-                                <Item Key="6461d6d7-3409-48d3-8451-6c7cbe5d6015">
-                                  <Value ID="6461d6d7-3409-48d3-8451-6c7cbe5d6015" r:Type="ConstantValueKeyframeUIModel [Kairos.TimelineUI.KeyframeUI]">
-                                    <Source_Model ID="6461d6d7-3409-48d3-8451-6c7cbe5d6015">
-                                      <Author_IDs>
-                                        <Item></Item>
-                                      </Author_IDs>
-                                      <Settings Alpha="1" Position="0.2">
-                                        <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        <Compositing_Model>
-                                          <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                          <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
-                                        </Compositing_Model>
-                                        <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
-                                      </Settings>
-                                      <Value r:Type="Float32 [Primitive]">0.4760001</Value>
-                                    </Source_Model>
-                                  </Value>
-                                </Item>
-                              </UI_Keyframes>
-                            </Value>
-                          </Item>
-                        </Tracks>
-                      </Content_Model>
-                    </Value>
-                  </Item>
-                  <Item Key="062b89d3-e0a1-402f-a6a1-005f539972ea">
-                    <Value Attached="True" ID="062b89d3-e0a1-402f-a6a1-005f539972ea" r:Type="KairosNodeUIWindowModel [Kairos.Common.KairosNodeUI]">
-                      <Content_Model ID="1721ef14-8b18-46b4-816a-52c9d304cb4e" Target_Node_Path="C2UZ0fXB6N4OjQbgafLobo CU8H6MILzYDPPgNUSzARng.C2UZ0fXB6N4OjQbgafLobo MJTC26zq1FcOCRTGighAEg" r:Type="CompositionSamplerUIModel [Kairos.CompositionSamplerUI]" />
-                    </Value>
-                  </Item>
-                </Windows>
-              </p:DefaultValue>
+              <p:DefaultValue ID="be9b1503-50af-433b-b640-d06c07fb3a5d" Imgui_Layout="[Window][DockSpaceViewport_11111111]&#xA;Pos=0,26&#xA;Size=957,954&#xA;Collapsed=0&#xA;&#xA;[Window][Debug##Default]&#xA;Pos=60,60&#xA;Size=400,400&#xA;Collapsed=0&#xA;&#xA;[Docking][Data]&#xA;DockSpace ID=0x8B93E3BD Window=0xA787BDB4 Pos=0,26 Size=957,954 CentralNode=1&#xA;&#xA;" r:Type="KairosEditorModel [Kairos]" xmlns:r="reflection" r:Version="2" />
             </Pin>
-            <Pin Id="ALtRKQDqB7hM5mXKGONyVN" Name="Bounds" Kind="InputPin" DefaultValue="625, 0, 916, 821" />
+            <Pin Id="ALtRKQDqB7hM5mXKGONyVN" Name="Bounds" Kind="InputPin" DefaultValue="760, 0, 780, 821" />
             <Pin Id="LboFSw4TxK3LKBQYXP3kDc" Name="State Output" Kind="StateOutputPin" />
             <Pin Id="JAx76gh8CY8PqWixdM7cWB" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="CkaduL6VQWgQFaNd6cCbhy" Name="Model Stream" Kind="OutputPin" />
             <Pin Id="KU7yzFcsHTOO3hfCkgShuy" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="VMAGBhCKOVGPjw8QSdNTyW" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Node Bounds="370,286,111,19" Id="CU8H6MILzYDPPgNUSzARng">
+          <Node Bounds="354,374,111,19" Id="CU8H6MILzYDPPgNUSzARng">
             <p:NodeReference LastCategoryFullName="Kairos.Sampling" LastDependency="VL.Kairos.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CompositionSampler (IComposition1D)" />
             </p:NodeReference>
-            <Pin Id="PPru3g1Y0VUOqmbCc8os8L" Name="Model" Kind="InputPin" />
+            <Pin Id="PPru3g1Y0VUOqmbCc8os8L" Name="Model" Kind="InputPin">
+              <p:DefaultValue xmlns:r="reflection" r:Version="2">
+                <Track_Samplers>
+                  <Item Key="track-selection">
+                    <Value Enabled="True" Output_Pin_Enabled="True" TDomain="Float64" Track_ID="track-selection" Type_Full_Name="Integer32 [Primitive]">
+                      <Background_Value r:Type="Integer32 [Primitive]">0</Background_Value>
+                      <Parameter Key="d6066887-ffff-4bab-8fcc-c56c4047ecda" Path="track-selection" Type_Full_Name="Integer32 [Primitive]" />
+                      <Source_Track_Model ID="f1ba25c4-57fd-4316-8363-06697d1881f1" r:Type="TrackModel (Timeline) [Kairos.Timeline.Track]">
+                        <Author_IDs>
+                          <Item>TimelineUI</Item>
+                        </Author_IDs>
+                        <Items_Model>
+                          <Item Key="62724f59-f04e-49e9-ae19-08aecb2bc9f4">
+                            <Value ID="62724f59-f04e-49e9-ae19-08aecb2bc9f4" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
+                              <Author_IDs>
+                                <Item></Item>
+                              </Author_IDs>
+                              <Settings Alpha="1" Position="0.4">
+                                <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
+                                <Compositing_Model>
+                                  <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                                  <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
+                                </Compositing_Model>
+                                <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                              </Settings>
+                              <Value r:Type="Integer32 [Primitive]">0</Value>
+                            </Value>
+                          </Item>
+                          <Item Key="5cfb9dca-2fef-4404-a411-f2eccc4fe70e">
+                            <Value ID="5cfb9dca-2fef-4404-a411-f2eccc4fe70e" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
+                              <Author_IDs>
+                                <Item></Item>
+                              </Author_IDs>
+                              <Settings Alpha="1" Position="2.6">
+                                <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
+                                <Compositing_Model>
+                                  <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                                  <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
+                                </Compositing_Model>
+                                <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                              </Settings>
+                              <Value r:Type="Integer32 [Primitive]">2</Value>
+                            </Value>
+                          </Item>
+                          <Item Key="7afbab20-1d41-40f0-8a5c-0d7a389252d6">
+                            <Value ID="7afbab20-1d41-40f0-8a5c-0d7a389252d6" r:Type="ConstantValueKeyframeModel (Timeline) [Kairos.Timeline.Keyframe]">
+                              <Author_IDs>
+                                <Item></Item>
+                              </Author_IDs>
+                              <Settings Alpha="1" Position="1.8">
+                                <Alpha_Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
+                                <Compositing_Model>
+                                  <Alpha_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                                  <Blending_Model r:Type="NormalBlendingModel [AlchemX.Blending.Model]" />
+                                </Compositing_Model>
+                                <Interpolation_Model r:Type="LinearInterpolationModel [AlchemX.Interpolation.Model]" />
+                              </Settings>
+                              <Value r:Type="Integer32 [Primitive]">1</Value>
+                            </Value>
+                          </Item>
+                        </Items_Model>
+                        <Parameter Key="d6066887-ffff-4bab-8fcc-c56c4047ecda" Path="track-selection" Type_Full_Name="Integer32 [Primitive]" />
+                      </Source_Track_Model>
+                    </Value>
+                  </Item>
+                </Track_Samplers>
+              </p:DefaultValue>
+            </Pin>
             <Pin Id="HrEW4WHPPTzONVxYdkBXUd" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="I1BZS4ijVtFQBLHjl71Gjt" Name="Composition" Kind="InputPin" />
             <Pin Id="QSsmIMOVkQbMfIxlKE6FmL" Name="Sampling Position Provider" Kind="InputPin" />
@@ -346,106 +345,139 @@
             <Pin Id="FFwd4Cyx0ChP28iFeyI7QX" Name="Force Write to Global Channel" Kind="InputPin" IsHidden="true" />
             <Pin Id="DjqoYKpRP62Ob6uaTJ5gWj" Name="Enabled" Kind="InputPin" />
             <Pin Id="VFRpFs0E5hFOmc9WMuEjrK" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="IyASt44kodHO9WJfYp7R9j" Name="track-selection" Kind="OutputPin" PinGroupName="Output Values">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" NeedsToBeDirectParent="true" />
+              </p:TypeAnnotation>
+            </Pin>
           </Node>
-          <Node Bounds="467,158,45,19" Id="OrmZvKtGPSON7ePY6BlFun">
-            <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="LFO" />
-            </p:NodeReference>
-            <Pin Id="IEN9fHbQpIkOlMBtQGupNS" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="RcidKKRO95pQO324SrVMnj" Name="Clock" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NUNQ8wc96jRPXD9QjgXs68" Name="New Clock" Kind="InputPin" IsHidden="true" />
-            <Pin Id="K2OTnsxweCGL9swdG5jx33" Name="Period" Kind="InputPin" />
-            <Pin Id="ComC4EWEMmpLGGvaY4T2Zb" Name="Pause" Kind="InputPin" />
-            <Pin Id="Sh6XfoMwz1rOwGa6Xe0hyK" Name="Reset" Kind="ApplyPin" />
-            <Pin Id="EQwx5AkAdDbNqDBWRdzwus" Name="Phase" Kind="OutputPin" />
-            <Pin Id="QoxYrF4bkkxNCamTunJpik" Name="On New Cycle" Kind="OutputPin" />
-            <Pin Id="RASBYsLFB82Ly2TKqCA8M8" Name="Cycles" Kind="OutputPin" />
-          </Node>
-          <Pad Id="Drt5Cnij4NVMPROZBu0L7y" Comment="text-test" Bounds="563,193,35,15" ShowValueBox="true" isIOBox="true" Value="test">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="387,-32,45,19" Id="PLSEg1P6aqwLHLGuG4I5p2">
-            <p:NodeReference LastCategoryFullName="SRT" LastDependency="VL.SRT.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="SRT" />
-            </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-            <Pin Id="BJNMqsNjZZfQHfhb8o8Vg2" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="CzuUPMouExINIarR3TrDzI" Name="filename" Kind="InputPin" />
-            <Pin Id="AgGsF9Rxp3vPxYfUHRfiZy" Name="Read" Kind="InputPin" />
-            <Pin Id="QPMGgilrCSzMteYxEELDEd" Name="Time" Kind="InputPin" />
-            <Pin Id="UnOkBANcChVMM4xVbWRHuX" Name="State Output" Kind="OutputPin" />
-            <Pin Id="MsAz7yj0vg0PartJA3x74O" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Pad Id="LBqezrWoYm2NGBb3kuP2Cz" Comment="filename" Bounds="389,-258,224,15" ShowValueBox="true" isIOBox="true" Value="assets\srt\[English] Pussy Riot - БЕСИТ _ RAGE (Official Music Video) [DownSub.com].srt">
+          <Pad Id="LBqezrWoYm2NGBb3kuP2Cz" Comment="filename" Bounds="-102,153,224,15" ShowValueBox="true" isIOBox="true" Value="assets\srt\[Russian] Pussy Riot - БЕСИТ _ RAGE (Official Music Video) [DownSub.com].srt">
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VRhUseDBG0sOWAtwldRmyv" Comment="" Bounds="429,13,368,100" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="AKhqBzakcSaMu6DoVLnEV9" Comment="Read" Bounds="409,-231,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="UAAejVQnPpxOldxhVVpdDX" Comment="Filename" Bounds="-365,181,178,15" ShowValueBox="true" isIOBox="true" Value="assets\video\Pussy Riot - БЕСИТ _ RAGE (Official Music Video).mp4">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="51,770,85,19" Id="JoFrADUnej0MAqyR1L50wU">
+            <p:NodeReference LastCategoryFullName="MXL" LastDependency="MotionExperienceLib-0.2.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MXLWindow" />
+            </p:NodeReference>
+            <Pin Id="TMpcYBHqrjaPCkZRzZmUDv" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="GFYP2YBWLb0PBLeZLov1qs" Name="Renderer" Kind="InputPin" />
+            <Pin Id="A2QdqOKdfT4PnDZlTKz0vN" Name="Entities" Kind="InputPin" />
+            <Pin Id="AUw84XIpjBiQcOt328J5D5" Name="Entities 2" Kind="InputPin" />
+            <Pin Id="G2yYob8sDh2N9asWvWQpmG" Name="Clear Color" Kind="InputPin" />
+            <Pin Id="AR2vBeQyhJsNFIUkmLjlNL" Name="Post Effects" Kind="InputPin" />
+            <Pin Id="FtdhgRoI1LtOupImHWAb5e" Name="Size" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="226,650,45,19" Id="IApHb1zbHE8MaNEvbZ9mz5">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Switch" />
+            </p:NodeReference>
+            <Pin Id="DZI2GnbrR16OvlP6kAwrty" Name="Index" Kind="InputPin" />
+            <Pin Id="DSUogzLEIUjMJv43S2tKp8" Name="Input" Kind="InputPin" />
+            <Pin Id="SFs53lOoLYFPIvFAVFS2Dy" Name="Input 2" Kind="InputPin" />
+            <Pin Id="V0yqyaUZ1sXNnmYoMmEoJV" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="477,531,44,19" Id="M9nYzDkhEnqQW4F7vrN6XS">
+            <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Rendering" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="ProcessAppFlag" Name="Group" />
+            </p:NodeReference>
+            <Pin Id="SG1yb2INwiuLI2Y0EDVAwj" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="S7UkcnpPf8HOQq5QPlZlgD" Name="Input" Kind="InputPin" />
+            <Pin Id="FTDxzpawIQDLVSo8W6Zuh0" Name="Input 2" Kind="InputPin" />
+            <Pin Id="DXGY2gMzlESOQJGwf69vJU" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="559,566,44,19" Id="O6Upc1RsYuuLAhi2u9LnyZ">
+            <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Rendering" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="ProcessAppFlag" Name="Group" />
+            </p:NodeReference>
+            <Pin Id="CcZCk1UdReMOmx5sbDvpWW" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IWGV6oGWxkYMNxMTZY7kL9" Name="Input" Kind="InputPin" />
+            <Pin Id="M09JsIBWOuJONgc8RWsZ20" Name="Input 2" Kind="InputPin" />
+            <Pin Id="SSJP056I8rqP0B5t0nbrT7" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="510,338,225,19" Id="JO1ar4wtSwCMPt5WD3H8M1">
+            <p:NodeReference LastCategoryFullName="Kairos.Sampling" LastDependency="VL.Kairos.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Clock (Kairos)" />
+            </p:NodeReference>
+            <Pin Id="HiNh9mGt9iYQcojX1MWrtX" Name="Model" Kind="InputPin">
+              <p:DefaultValue Loop_Enabled="True" Loop_Out="10" Period="1" Speed="1" />
+            </Pin>
+            <Pin Id="BhHGz471hpQObRIMAF3Lt8" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="D8mXZeFgXKtP5ldJUoy3GW" Name="Save Model on Exit Enabled" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ASlvY5jzOEcN8EFa29GySy" Name="Initial Playing" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="Cw6T5cOHb9mMbi4zor7dVj" Name="Initial Time" Kind="InputPin" />
+            <Pin Id="KXfzmgRBO1xM2SVhYVW23I" Name="BPM" Kind="InputPin" />
+            <Pin Id="CoiNwR0Vsr4OSpr1f46gxJ" Name="Period" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IhYhuV1zefyP9SDeqTj50K" Name="Speed" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TkJk5PmKTfQLzj1qyjzqbL" Name="Play" Kind="ApplyPin" DefaultValue="False" />
+            <Pin Id="GyuMHXhr507NRG1DH50Gdl" Name="Stop" Kind="ApplyPin" />
+            <Pin Id="E24ZUpzucsONTmkLlX0l5Q" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="Os12r1JzifqPX4LEr651Om" Name="Seconds" Kind="InputPin" />
+            <Pin Id="QLjYIV7WdKAOJm2Q1BQJtk" Name="Loop In" Kind="InputPin" />
+            <Pin Id="EvzRu5B7P9wNKMYkSWQaYh" Name="Loop Out" Kind="InputPin" />
+            <Pin Id="GyEjsKcdSkxO2yfOG4f5nX" Name="Loop Enabled" Kind="InputPin" />
+            <Pin Id="FHNL2Yn4bZYOGKJEXB9aA7" Name="Enabled" Kind="InputPin" />
+            <Pin Id="Ek3YCUSRQ3dPFdQ9Aru60Z" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="QDTewPocBnYMLfabRrTpNr" Name="Update Stream" Kind="OutputPin" />
+            <Pin Id="M1y4nGTbLTiMB3pi1HFEMI" Name="Phase" Kind="OutputPin" />
+            <Pin Id="J6AdCkvv5KEMlWKJZ2N53V" Name="Cycles" Kind="OutputPin" />
+            <Pin Id="Eb48bdjbZemMHQWPAUhULN" Name="Time Step" Kind="OutputPin" />
+            <Pin Id="VJCinhDhxXkMWrIinb2bFj" Name="Ticks" Kind="OutputPin" />
+            <Pin Id="UDbyne6EX7nOTcu5xiE6NV" Name="Seconds" Kind="OutputPin" />
+            <Pin Id="SrU5NO1EebZPxiAM4dFqFy" Name="Seconds Float32" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PvYL8dtzjTJLO1b2OBcbeh" Comment="Play" Bounds="644,222,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="127,-206,165,19" Id="SU14w71Yg8TPvV6rlQ1G7x">
-            <p:NodeReference LastCategoryFullName="Video" LastDependency="VL.Video.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="VideoPlayer" />
-            </p:NodeReference>
-            <Pin Id="JMWniKyE8bOPVhHZrHfumT" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="D0IPGTlp9wLMJwGJLschZi" Name="Filename" Kind="InputPin" />
-            <Pin Id="OqSdEqQMf1ZMNW6a2DLejr" Name="Play" Kind="InputPin" />
-            <Pin Id="RJH4QR8VMRCNonEpl9mM6v" Name="Rate" Kind="InputPin" />
-            <Pin Id="QmyaYCmPS7NPquJINclQYb" Name="Seek Time" Kind="InputPin" />
-            <Pin Id="Oe4AntC2FO5QdqdmYp6kLt" Name="Seek" Kind="InputPin" />
-            <Pin Id="PpeGiCZ1mnXMhed3g0wEHL" Name="Loop Start Time" Kind="InputPin" />
-            <Pin Id="OWfmFfxbMayQSekUx3TfAv" Name="Loop End Time" Kind="InputPin" />
-            <Pin Id="DPCswQXxvTNNXMDYRifuwR" Name="Loop" Kind="InputPin" />
-            <Pin Id="MKGpxJ7HrrdOxVfxBfytoJ" Name="Volume" Kind="InputPin" />
-            <Pin Id="LK32QRkHBJsMJYSmC7GqmP" Name="Output" Kind="OutputPin" />
-            <Pin Id="V4rgDsfEDp5PDoU59vdayK" Name="Playing" Kind="OutputPin" />
-            <Pin Id="UvkjZCNrSpdNkNbPE7idTI" Name="Current Time" Kind="OutputPin" />
-            <Pin Id="FkKxV8hQGSLMlbTAxWjlqc" Name="Duration" Kind="OutputPin" />
-            <Pin Id="P9mCdo7TqFTQc5mtoaOAPF" Name="Ready State" Kind="OutputPin" />
-            <Pin Id="HRdPruT0TMCNUmOEN3PWEj" Name="Error Code" Kind="OutputPin" />
-            <Pin Id="CpBzhnCpqxILqNRkZpqqHB" Name="Texture Size" Kind="InputPin" IsHidden="true" />
-            <Pin Id="CGQ6rCy94TdLNp03EafAMo" Name="Source Bounds" Kind="InputPin" IsHidden="true" />
-            <Pin Id="BGfSUyhQMDTL0wAu1URkpt" Name="Border Color" Kind="InputPin" IsHidden="true" />
-          </Node>
-          <Pad Id="UAAejVQnPpxOldxhVVpdDX" Comment="Filename" Bounds="150,-308,140,15" ShowValueBox="true" isIOBox="true" Value="assets\video\Pussy Riot - БЕСИТ _ RAGE (Official Music Video).mp4">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Path" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="135,-134,119,19" Id="S59UHLYP85lNTVoGiyZHhD">
-            <p:NodeReference LastCategoryFullName="Stride.Video" LastDependency="VL.Stride.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="VideoSourceToTexture" />
-            </p:NodeReference>
-            <Pin Id="Fk7cDlxWyITQZ90CZwIx34" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Bopa9362LgIPNYzFKYQRAL" Name="Input" Kind="InputPin" />
-            <Pin Id="MKu3TYxKk8yQGcEanuJkt5" Name="Fallback" Kind="InputPin" />
-            <Pin Id="EOA4lAgkpOYPH3xPLgGBIk" Name="Prefer Push" Kind="InputPin" />
-            <Pin Id="OJULPnQpgboLcIw4kV1QMF" Name="Prefer Gpu" Kind="InputPin" DefaultValue="False" />
-            <Pin Id="GA5aVVRYisoPVNm1jQCej5" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Pad Id="SBtrr4kqmnMMKhOKB9JI7R" Comment="Play" Bounds="214,-242,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="De3Mw4nmTPZONOYQWmG6ho" Comment="Stop" Bounds="739,224,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="V4XGjJxddUvM9o87x6XqaD" Comment="" Bounds="167,-37,190,132" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="-203,295,125,19" Id="SjXBJ2UNfYfMGS7V35PoEw">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="kairos-timeline.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessNode" Name="SRTVideo" />
+            </p:NodeReference>
+            <Pin Id="HaGFIYrH9u9N7da1ytKWtF" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DgRNWWRys5KOWHj8i228hH" Name="Videofile" Kind="InputPin" />
+            <Pin Id="EGxVLZRwVylQC2lktjHXjv" Name="SRTFile" Kind="InputPin" />
+            <Pin Id="UV4uU5ULAnSPMnol1RLw2L" Name="play" Kind="InputPin" />
+            <Pin Id="C1923WxGA7YL2cqcCQcqrT" Name="Loop Start Time" Kind="InputPin" />
+            <Pin Id="VfgrkXrx1n9PqpZ9aTUuOO" Name="Loop End Time" Kind="InputPin" />
+            <Pin Id="Nv50IMmG3PTQEh7HypLeom" Name="Volume" Kind="InputPin" />
+            <Pin Id="PK2EqeK6DTWMWOvLpW3SWD" Name="Read" Kind="InputPin" />
+            <Pin Id="SlF6uJb6n7iPrZ6enTMdLV" Name="Video" Kind="OutputPin" />
+            <Pin Id="KYjDrQTaNi9Purxz3dBioP" Name="Text" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QjQICAkANBXOBVXQyoEnFM" Comment="Text" Bounds="-70,431,178,50" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ho9qBciSO0uOZjJO8loujc" Comment="Video" Bounds="-370,386,190,132" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="FabvR5bryjOPOwDTSOyzGu" Name="Create" />
         <Patch Id="LXwmghOKD03MwDhBFauFTk" Name="Update" />
@@ -453,21 +485,24 @@
           <Fragment Id="LbRlmiGYcCDQGQsmfO8S5D" Patch="FabvR5bryjOPOwDTSOyzGu" Enabled="true" />
           <Fragment Id="LkpRRDA8PXALBEod2JmLqC" Patch="LXwmghOKD03MwDhBFauFTk" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="F6o6jfTyw50PAQNUd8rqkY" Ids="EQwx5AkAdDbNqDBWRdzwus,F9vi6fBzItxNn6fNTq966S" />
-        <Link Id="JjtsWFo42shP8vgd2wmUkV" Ids="Drt5Cnij4NVMPROZBu0L7y,CSqPkz17KGSLNRwG9ORGHh" />
-        <Link Id="Q6Sxvy4h8HmNMN0yqRmKvh" Ids="LBqezrWoYm2NGBb3kuP2Cz,CzuUPMouExINIarR3TrDzI" />
-        <Link Id="OHHXJnCEWEYLlg1LpmrAIt" Ids="MsAz7yj0vg0PartJA3x74O,VRhUseDBG0sOWAtwldRmyv" />
-        <Link Id="PKOcwUzfSFZOxbVAgXv6MB" Ids="AKhqBzakcSaMu6DoVLnEV9,AgGsF9Rxp3vPxYfUHRfiZy" />
-        <Link Id="SZRLeOFRfHRMNhkjSF0a8F" Ids="UAAejVQnPpxOldxhVVpdDX,D0IPGTlp9wLMJwGJLschZi" />
-        <Link Id="VlmLRQlZbO3NJWRZvhSBqv" Ids="LK32QRkHBJsMJYSmC7GqmP,Bopa9362LgIPNYzFKYQRAL" />
-        <Link Id="PJd9BludaLlQC81XpOnk8Y" Ids="UvkjZCNrSpdNkNbPE7idTI,QPMGgilrCSzMteYxEELDEd" />
-        <Link Id="CuQGIYwxdSBQVTVmZB1Gt8" Ids="SBtrr4kqmnMMKhOKB9JI7R,OqSdEqQMf1ZMNW6a2DLejr" />
-        <Link Id="R6N76X0fDLkP0GEcJvZE8B" Ids="GA5aVVRYisoPVNm1jQCej5,V4XGjJxddUvM9o87x6XqaD" />
+        <Link Id="G38PufTT5K9OgMuSU8Y9hX" Ids="DXGY2gMzlESOQJGwf69vJU,DSUogzLEIUjMJv43S2tKp8" />
+        <Link Id="Vi0ZjZxijKuPgqugBS8VxF" Ids="V0yqyaUZ1sXNnmYoMmEoJV,GFYP2YBWLb0PBLeZLov1qs" />
+        <Link Id="D04QdQWpFkkMPUtg46MOOz" Ids="SSJP056I8rqP0B5t0nbrT7,SFs53lOoLYFPIvFAVFS2Dy" />
+        <Link Id="MVEiAYaa7GZMjhhg0ktay8" Ids="AxItaIAXozJME8Um7R2Azb,I1BZS4ijVtFQBLHjl71Gjt" />
+        <Link Id="Guu8TN3Od8vLyg3Qst3wMQ" Ids="Ek3YCUSRQ3dPFdQ9Aru60Z,QSsmIMOVkQbMfIxlKE6FmL" />
+        <Link Id="Pe5OEeO0l2lNfO3gKurSXV" Ids="IyASt44kodHO9WJfYp7R9j,DZI2GnbrR16OvlP6kAwrty" />
+        <Link Id="SGrRdskUTEnMdVt5OjauAl" Ids="PvYL8dtzjTJLO1b2OBcbeh,TkJk5PmKTfQLzj1qyjzqbL" />
+        <Link Id="LgfvZ6DxhGiL3F13Psj14J" Ids="De3Mw4nmTPZONOYQWmG6ho,GyuMHXhr507NRG1DH50Gdl" />
+        <Link Id="G2p7LqWQQAkN6F6QgQsqar" Ids="UAAejVQnPpxOldxhVVpdDX,DgRNWWRys5KOWHj8i228hH" />
+        <Link Id="Nm9v5AxaSxnMwt32KSJkgj" Ids="LBqezrWoYm2NGBb3kuP2Cz,EGxVLZRwVylQC2lktjHXjv" />
+        <Link Id="JBkGndXaBW1NT9qC8buYy1" Ids="KYjDrQTaNi9Purxz3dBioP,QjQICAkANBXOBVXQyoEnFM" />
+        <Link Id="VyRhsiWStKeLMMQwoJCKqq" Ids="SlF6uJb6n7iPrZ6enTMdLV,Ho9qBciSO0uOZjJO8loujc" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PuhcF8LchZfOsZyXlGRRjs" Location="VL.Kairos" Version="1.1.10" />
   <NugetDependency Id="Qkip5o3itSeOjJ5J3we4et" Location="VL.SRT" Version="1.0.1" />
-  <NugetDependency Id="NaRuow8vcGUPJzaqDTfl94" Location="VL.Video" Version="2024.6.7" />
-  <NugetDependency Id="FO9PGUDMEgkOsrzL958vyE" Location="VL.Stride" Version="2024.6.7" />
+  <NugetDependency Id="NaRuow8vcGUPJzaqDTfl94" Location="VL.Video" Version="2025.7.0-0361-gd2ce43ef49" />
+  <NugetDependency Id="FO9PGUDMEgkOsrzL958vyE" Location="VL.Stride" Version="2025.7.0-0361-gd2ce43ef49" />
+  <DocumentDependency Id="OSquO4GzN5EMJViRLoluUd" Location="./include/MotionExperienceLib-0.2.vl" />
+  <NugetDependency Id="BbaQsVTIAgxLTYpYknDRcZ" Location="VL.Kairos" Version="1.1.10" />
 </Document>
